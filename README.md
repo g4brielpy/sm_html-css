@@ -1,2 +1,1 @@
-# sm_html-css
-Super Módulo de HTML &amp; CSS da Infinity School
+# 🚀 Bem-vindo ao meu repositório de projetos da Infinity School!

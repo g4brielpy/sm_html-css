@@ -1,0 +1,60 @@
+@import "main.css";
+
+/* HEADER - CABEÇALHO */
+header.cabecalho {
+  width: 100%;
+  max-width: 1024px;
+
+  margin: 2em auto 5em;
+  padding: 0 1em 1.5em;
+  border-bottom: 2px solid #140066b4;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.cabecalho .titulo-header {
+  color: var(--cor_destaque);
+  font-size: 2em;
+}
+
+nav.links-header {
+  display: flex;
+  gap: 1em;
+}
+.cabecalho a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4em;
+}
+.links-header a:hover {
+  text-decoration: underline;
+}
+.cabecalho a.login {
+  background-color: var(--cor_destaque);
+  color: #fff;
+
+  padding: 0.4em;
+  border-radius: 5px;
+}
+.cabecalho a.login:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 630px) {
+  nav.links-header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cabecalho .titulo-header {
+    font-size: 1.6em;
+  }
+  .cabecalho a {
+    font-size: 1.2em;
+  }
+}

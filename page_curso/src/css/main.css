@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "header.css";
+@import "section.css";
+@import "footer.css";
+@import "form.css";
+
+:root {
+  --cor_destaque: #140066;
+  --cor_sub_destaque: #cf3c5c;
+  --cor_curso: #cf3cc3;
+  --branco: #ffffff;
+  --preto: #000000;
+  --font_principal: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font_principal);
+}

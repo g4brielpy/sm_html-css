@@ -1,0 +1,110 @@
+@import "main.css";
+
+/* MAIN - CONTEÚDO PRINCIPAL */
+h1.titulo-main {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+h2.sub-titulo-main {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+span.rosa {
+  color: var(--cor_sub_destaque);
+}
+.largura-max {
+  width: 100%;
+  max-width: 1024px;
+
+  margin: 1em auto;
+  padding: 0 1em;
+}
+
+/* SECTION - container dos cards */
+section.secao-cursos {
+  border-radius: 10px;
+  background: var(--cor_destaque);
+  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
+  padding: 2.5em;
+  margin: 5em 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+div.conteiner-coluna {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+/* cards do cursos */
+div.card-cursos {
+  background-color: var(--branco);
+  border-radius: 10px;
+  padding: 2em 0.5em 1.2em;
+  text-align: left;
+  flex: 1 2 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.card-cursos .box-conteudo p {
+  color: var(--preto);
+  font-size: 1.3em;
+  text-decoration: none;
+}
+.card-cursos a.botao-infor {
+  background-color: var(--cor_sub_destaque);
+  color: var(--branco);
+
+  width: 100%;
+  min-width: 120px;
+
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  border-radius: 10px;
+  padding: 1em;
+}
+.card-cursos a.botao-infor:hover {
+  transition: 0.5s;
+  transform: scale(1.005);
+  opacity: 0.9;
+}
+.box-conteudo span.real {
+  color: var(--cor_sub_destaque);
+  font-weight: 600;
+  text-transform: lowercase;
+}
+.card-cursos .box-img img {
+  width: 100%;
+  max-width: 220px;
+
+  border-radius: 50px;
+  object-fit: cover;
+  opacity: 0.85;
+}
+.card-cursos .box-img img:hover {
+  transition: 0.5s;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 730px) {
+  h1.titulo-main,
+  h2.sub-titulo-main {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+  main.largura-max {
+    padding: 0;
+  }
+}
